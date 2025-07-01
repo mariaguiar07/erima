@@ -3,19 +3,30 @@
     margin: 0;
     font-family: degular-variable, sans-seri;
     font-weight: 400;
-
     color: white;
 }
 
-body {
+.container {
+    display: block;
+}
+
+.imagem-fundo {
     background-image: url(./img/fundo-header.png);
     background-size: 100vw;
     background-position: center;
     background-repeat: no-repeat;
+    height: 700px;
+
+.cor-fundo {
+    height: 500px;
+    height: 100vw;
+    background-color: #0f002c;
+}
 
 }
 
 .logo {
     width: 200px;
     height: auto;
+    
 }

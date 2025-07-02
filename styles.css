@@ -6,21 +6,23 @@
     color: white;
 }
 
-.container {
-    display: block;
-}
 
 .imagem-fundo {
     background-image: url(./img/fundo-header.png);
     background-size: 100vw;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    display: block;
     height: 700px;
+    
 
 .cor-fundo {
-    height: 500px;
-    height: 100vw;
+    width: 100vw;
+    height: 1000px;
     background-color: #0f002c;
+    position: relative;
+    display: block;
+    z-index: -1;
 }
 
 }

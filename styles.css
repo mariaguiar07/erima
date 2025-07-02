@@ -6,29 +6,37 @@
     color: white;
 }
 
-
 .imagem-fundo {
     background-image: url(./img/fundo-header.png);
-    background-size: 100vw;
-    background-position: top;
+    background-size: 100%;
     background-repeat: no-repeat;
     display: block;
     height: 700px;
-    
+    padding-top: 70px;
+
+}
 
 .cor-fundo {
-    width: 100vw;
+    width: 100%;
     height: 1000px;
     background-color: #0f002c;
-    position: relative;
+    position: absolute;
     display: block;
     z-index: -1;
 }
 
+.menu {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 360px;
 }
+
+.icon-menu {
+    padding-right: 70px;
+}
+
 
 .logo {
     width: 200px;
     height: auto;
-    
 }

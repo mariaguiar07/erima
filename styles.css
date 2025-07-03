@@ -84,6 +84,30 @@ h1 {
 
 /*INICIO SEGUNDA SEÇÃO*/
 
+/*Icones da seção "SOBRE NÓS"*/
+.icon-sobre-nos {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 90px;
+}
+
+.icon-sobre-nos figure img {
+    width: 110px;
+    margin-bottom: 8px;
+}
+
+figure {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*Imagens na lateral dos icones*/
+
+
+
 
 
 
@@ -97,4 +121,3 @@ h1 {
     margin: 50px 160px;
     opacity: 0.6;
 }
-

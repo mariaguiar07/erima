@@ -6,6 +6,8 @@
     color: white;
 }
 
+/*INICIO PRIMEIRA SEÇÃO*/
+
 .imagem-fundo {
     background-image: url(./img/fundo-header.png);
     background-size: 100%;
@@ -14,13 +16,11 @@
     height: 600px;
     padding-top: 70px;
     padding-bottom: 100px;
-    
-
 }
 
 .cor-fundo {
     width: 100%;
-    height: 1000px;
+    height: 5000px;
     background-color: #0f002c;
     position: absolute;
     display: block;
@@ -80,5 +80,21 @@ h1 {
     margin-left: 390px;
     color: rgb(135, 133, 133);
     opacity: 0.5;
-
 }
+
+/*INICIO SEGUNDA SEÇÃO*/
+
+
+
+
+
+
+
+
+
+/*INICIO TERCEIRA SEÇÃO*/
+.imagem-fundo-produtos {
+    margin: 50px 160px;
+    opacity: 0.6;
+}
+

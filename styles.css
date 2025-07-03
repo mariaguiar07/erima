@@ -11,8 +11,10 @@
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
-    height: 700px;
+    height: 600px;
     padding-top: 70px;
+    padding-bottom: 100px;
+    
 
 }
 
@@ -30,15 +32,18 @@
     word-spacing: 1px;
     text-transform: uppercase;
     font-size: 21px;
-    padding-left: 450px;
+    padding-left: 400px;
 }
 
 .icon-menu {
+    display: inline-block;
     padding-right: 90px;
+    transition: transform 0.9s ease;
 }
 
 .icon-menu:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .button-menu {
@@ -52,7 +57,6 @@
     border: none;
     transition: transform 0.9s ease;
     transition: background-color 0.9s ease;
-    
 }
 
 .button-menu:hover {
@@ -63,6 +67,18 @@
 
 
 .logo {
-    width: 200px;
+    margin: 180px 495px;
+    width: 700px;
     height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 390px;
+    color: rgb(135, 133, 133);
+    opacity: 0.5;
+
 }

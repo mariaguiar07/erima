@@ -88,7 +88,7 @@ h1 {
 .icon-sobre-nos {
     display: flex;
     justify-content: center;
-    gap: 180px;
+    gap: 152px;
     margin-top: 90px;
 }
 
@@ -105,19 +105,58 @@ figure {
 }
 
 /*Imagens na lateral dos icones*/
+.imagem-lateral-esquerda-icon {
+    width: 360px;
+    height: auto;
+}
 
+.imagem-lateral-direita-icon {
+    width: 365px;
+    height: auto;
+}
 
+/*Imagem da equipe*/
+.imagem-e-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
 
+.imagem-equipe {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    margin-top: 50px;
+}
 
+.titulo-sobre-nos {
+    margin: 0 0 10px 25px;
+    text-align: center;
+    justify-items: center;
+    font-size: 30px;
+}
 
+.sobre-nos {
+    display: inline-block;
+    width: 440px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 33px;
+}
 
-
-
-
-
+.fundo-texto {
+    box-sizing: content-box;
+    width: 440px;
+    height: 340px;
+    background-color: #201b45;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: justify;
+}
 
 /*INICIO TERCEIRA SEÇÃO*/
 .imagem-fundo-produtos {
     margin: 50px 160px;
-    opacity: 0.6;
 }

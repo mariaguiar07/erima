@@ -11,9 +11,9 @@
 
 <body>
 
-    <div class="imagem-fundo">
+    <div class="imagem-fundo-secao1"> <!--fundo da seção 1-->
 
-        <nav class="menu">
+        <nav class="menu-topo-secao1"> <!--menu no topo da seção 1-->
             <a class="icon-menu">Início</a>
             <a class="icon-menu">Sobre nós</a>
             <a class="icon-menu">Produtos</a>
@@ -21,160 +21,195 @@
             <button class="button-menu">Contato</button>
         </nav>
 
-        <header>
+        <header> <!--logo e frase da seção 1-->
             <img class="logo" src="./img/Erima-Tecnologia-Logotipo-RGB_ER_Logotipo-branco-verde.png">
-            <h1>Integramos Software e Hardware com inteligencia, velocidade e seguranca.</h1>
+            <h1 class="frase-secao1">Integramos Software e Hardware com inteligencia, velocidade e seguranca.</h1>
         </header>
 
-        <div class="cor-fundo"></div>
+        <div class="cor-fundo-pag"></div>
+    </div> <!--cor sólida no fundo de toda a página-->
 
-    </div>
+    <main> <!--caixa-mãe da seção 2-->
 
-    <main>
-        <section>
-            <div class="icon-sobre-nos">
+        <section class="layout-secao2"> <!--primogênito na seção 2-->
+
+            <div class="bloco-imagens-secao2">
 
                 <img class="imagem-lateral-esquerda-icon" src="./img/imagem-lateral-esquerda-sobre.png">
+                <!--fora da caixa e antes vai aparecer à esquerda dos icones-->
 
-                <figure>
-                    <img class="icon-placa-pc" src="./img/icone-placa-pc.PNG">
-                    <figcaption>software<br> inteligente</figcaption>
-                </figure>
+                <div class="icon-secao2"> <!--caixa neto 1 - icones com legendas na seção 2-->
+                    <figure>
+                        <img class="icon-placa-pc" src="./img/icone-placa-pc.PNG">
+                        <figcaption>software<br> inteligente</figcaption>
+                    </figure>
 
-                <figure>
-                    <img class="icon-wifi" src="./img/icone-wifi.PNG">
-                    <figcaption>Dispositivos<br> Conectados</figcaption>
-                </figure>
+                    <figure>
+                        <img class="icon-wifi" src="./img/icone-wifi.PNG">
+                        <figcaption>Dispositivos<br> Conectados</figcaption>
+                    </figure>
 
-                <figure>
-                    <img class="icon-ferragem" src="./img/icone-ferragem.PNG">
-                    <figcaption>Integrações<br> Personalizadas</figcaption>
-                </figure>
+                    <figure>
+                        <img class="icon-ferragem" src="./img/icone-ferragem.PNG">
+                        <figcaption>Integrações<br> Personalizadas</figcaption>
+                    </figure>
+                </div>
 
                 <img class="imagem-lateral-direita-icon" src="./img/imagem-lateral-direita-sobre.png">
+                <!--fora da caixa e depois vai aparecer à direita dos icones-->
+
             </div>
 
-            <div class="imagem-e-texto">
+            <div class="imagem-e-texto"> <!--caixa neto 2 - na seção 2-->
                 <img class="imagem-equipe" src="./img/imagem-equipe.png">
 
 
-                <div class="sobre-nos">
+                <div class="sobre-nos"> <!--caixa neto 3 que engloba toda a parte de texto-->
                     <h1 class="titulo-sobre-nos">Tecnologia com propósito</h1>
-                    <div class="fundo-texto">
+                    <div class="fundo-texto"> <!--cor sólida atrás do texto-->
                         <p class="texto-sobre-nos">Na <b>Erima Tecnologia</b> não somos apenas uma revenda de
                             informática –
                             <br>somos
                             solucionadores de problemas.
                             <br>Com os melhores parceiros do Brasil, oferecemos um atendimento ágil, próximo e
                             inteligente.
-                            <br>Buscamos ser o parceiro ideal para sua empresa, sempre atuando com ética, atualizados e
+                            <br>Buscamos ser o parceiro ideal para sua empresa, sempre atuando com ética,
+                            atualizados e
                             precisos.
                             <br><b>Estamos sempre à disposição!</b>
                         </p>
                     </div>
                 </div>
+
             </div>
+
         </section>
 
-        <section-other>
-            <img class="imagem-fundo-produtos" src="./img/fundo-produtos.png">
+        <section-other> <!--filho do meio na seção 3-->
+            <img class="imagem-fundo-produtos" src="./img/fundo-produtos.png"> <!--imagem de fundo na seção 3-->
         </section-other>
 
-        <article>
-            <div class="parceiros">
-                <h2>FALE O QUE PRECISA, NÓS TEMOS UMA SOLUÇÃO!</h2>
+        <article> <!--filho caçula na seção 4-->
+            <div class="parceiros-secao4">
+                <h2 class="frase-secao4">FALE O QUE PRECISA, NÓS TEMOS UMA SOLUÇÃO!</h2>
 
-                <div class="parceiros-layout">
+                <div class="layout-secao4"> <!--caixa neto 1 que engloba o layout com as imagens laterais + o grid-->
 
-                    <img class="imagem-sistema-lateral" src="./img/imagem-lateral-esquerda-parceiros.png"
+                    <img class="imagem-lateral-grid" src="./img/imagem-lateral-esquerda-parceiros.png"
                         alt="sistema-lateral">
+                    <!--imagem dentro da caixa globlas mas antes do grid para aparecer à esquerda do grid-->
 
-                    <div class="grid-logos">
+                    <div class="grid-logos"> <!--caixa bisneto com a grid das logos dos parceiros-->
 
-                        <div class="logo-box">
+                        <div class="logo-un"> <!--cada caixinha é um parceiro-->
                             <img src="./img/parceiros/icone-hp.png" alt="HP">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-lenovo.png" alt="Lenovo">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-dell.png" alt="Dell">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-honeywell.png" alt="Honeywell">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-zebra.png" alt="Zebra">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-cisco.png" alt="Cisco">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
+                            <img src="./img/parceiros/icone-apc.png" alt="APC">
+                        </div>
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-nhs.png" alt="NHS">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-apple.png" alt="Apple">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-hpe.png" alt="HPE">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-amd.png" alt="AMD">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-intel.png" alt="Intel">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-samsung.png" alt="Samsung">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-ubiquiti.png" alt="Ubiquiti">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-bitdefender.png" alt="Bitdefender">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-datalogic.png" alt="Datalogic">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-kaspersky.png" alt="Kaspersky">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-motorola.png" alt="Motorola">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-lg.png" alt="LG">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-epson.png" alt="Epson">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-dji.png" alt="DJI">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-poly.png" alt="Poly">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-logitech.png" alt="Logitech">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-jabra.png" alt="Jabra">
                         </div>
-                        <div class="logo-box">
+
+                        <div class="logo-un">
                             <img src="./img/parceiros/icone-microsoft.png" alt="Microsoft">
                         </div>
 
                     </div>
 
-                    <img class="imagem-sistema-lateral" src="./img/imagem-lateral-direita-parceiros.png"
-                            alt="sistema-lateral">
+                    <img class="imagem-lateral-grid" src="./img/imagem-lateral-direita-parceiros.png"
+                        alt="sistema-lateral">
+                    <!--imagem dentro da caixa globlas mas depois do grid para aparecer à direita do grid-->
 
                 </div>
 
-            </div>
-
         </article>
-
 
     </main>
 

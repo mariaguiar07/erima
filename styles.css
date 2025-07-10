@@ -5,19 +5,19 @@
     color: white;
 }
 
-/*INICIO PRIMEIRA SEÇÃO*/
+/*INICIO DA SEÇÃO 1*/
 
-.imagem-fundo {
+.imagem-fundo-secao1 {
     background-image: url(./img/fundo-header.png);
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
-    height: 600px;
+    height: 700px;
     padding-top: 70px;
     padding-bottom: 100px;
 }
 
-.cor-fundo {
+.cor-fundo-pag {
     width: 100%;
     height: 5000px;
     background-color: #0f002c;
@@ -26,12 +26,12 @@
     z-index: -1;
 }
 
-.menu {
+.menu-topo-secao1 {
     letter-spacing: 1px;
     word-spacing: 1px;
     text-transform: uppercase;
     font-size: 21px;
-    padding-left: 400px;
+    justify-self: center;
 }
 
 .icon-menu {
@@ -64,34 +64,36 @@
     background-color: #63b34a;
 }
 
-
 .logo {
-    margin: 180px 495px;
+    display: block;
+    margin: 180px auto;
     width: 700px;
     height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
+.frase-secao1 {
     font-size: 24px;
     letter-spacing: 1px;
     word-spacing: 1px;
     text-transform: uppercase;
-    margin-left: 390px;
+    justify-self: center;
     color: rgb(135, 133, 133);
     opacity: 0.5;
 }
 
-/*INICIO SEGUNDA SEÇÃO*/
+/*INICIO DA SEÇÃO 2*/
 
-/*Icones da seção "SOBRE NÓS"*/
-.icon-sobre-nos {
+/*Icones da seção 2*/
+.icon-secao2 {
     display: flex;
     justify-content: center;
     gap: 152px;
     margin-top: 90px;
 }
 
-.icon-sobre-nos figure img {
+.icon-secao2 figure img {
     width: 110px;
     margin-bottom: 8px;
 }
@@ -104,15 +106,30 @@ figure {
 }
 
 /*Imagens na lateral dos icones*/
-.imagem-lateral-esquerda-icon {
-    width: 360px;
+.layout-secao2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.bloco-imagens-secao2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 100vw; /* opcional para garantir limite da viewport */
+}
+
+.imagem-lateral-esquerda-icon, .imagem-lateral-direita-icon {
+    width: 400px;
     height: auto;
 }
 
-.imagem-lateral-direita-icon {
-    width: 365px;
-    height: auto;
-}
 
 /*Imagem da equipe*/
 .imagem-e-texto {
@@ -136,16 +153,6 @@ figure {
     font-size: 30px;
 }
 
-.sobre-nos {
-    display: inline-block;
-    width: 440px;
-    font-size: 24px;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    line-height: 33px;
-
-}
-
 .fundo-texto {
     box-sizing: content-box;
     width: 440px;
@@ -156,13 +163,26 @@ figure {
     text-align: justify;
 }
 
-/*INICIO TERCEIRA SEÇÃO*/
-.imagem-fundo-produtos {
-    margin: 50px 160px;
+.sobre-nos {
+    display: inline-block;
+    width: 440px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 33px;
 }
 
-/*INICIO SEÇÃO DOS PARCEIROS*/
-.parceiros {
+/*INICIO DA SEÇÃO 3*/
+.imagem-fundo-produtos {
+    display: block;
+    width: 700px;
+    height: auto;
+    margin: 280px auto;
+
+}
+
+/*INICIO DA SEÇÃO 4*/
+.parceiros-secao4 {
     text-align: center;
     background-color: #0f002c;
     /* fundo roxo escuro */
@@ -170,57 +190,54 @@ figure {
     color: #0f002c;
 }
 
-.parceiros h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+.frase-secao4 {
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 .grid-logos {
     display: grid;
-    grid-template-columns: repeat(8, 100px);
-    gap: 6px;
-    justify-content: center;
+    grid-template-columns: repeat(9, 120px); /*5 blocos com 200px de espessura cada uma*/
+    gap: 6px; /*Distanciamento interno*/
+    justify-content: center; /*grid centralizado na tela*/
 }
 
-.logo-box {
-    width: 100px;
-    height: 100px;
-    background-color: #0f002c;
-    border: 2px solid #4b4192;
-    border-radius: 12px;
+.logo-un {
+    width: 120px; /*largura do quadrado que envolve a logo*/
+    height: 120px; /*altura do quadrado que envolve a logo*/
+    background-color: #0f002c; /*cor do fundo do quadrado*/
+    border: 2px solid #4b4192; /*espessura e cor da borda*/
+    border-radius: 12px; /*arredondamento dos cantos*/
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
+    box-sizing: border-box; /*tamanho do quadrado definido*/
     transition: transform 0.3s ease;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
-.logo-box img {
+.logo-un img {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
     display: block;
 }
 
-.logo-box:hover {
+.logo-un:hover {
     transform: scale(1.05);
+    transform-origin: center;
 }
 
-.parceiros-layout {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-  gap: 30px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  padding: 0;
+.layout-secao4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
-.imagem-sistema-lateral {
-  width: 200px;
-  height: auto;
-  flex-shrink: 0;
+.imagem-lateral-grid {
+    width: 355px;
+    height: auto;
+    opacity: 0.5;
 }

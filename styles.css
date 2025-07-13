@@ -236,7 +236,7 @@ h3 {
     font-size: 16px;
     font-weight: 400;
     color: #8c52ff;
-    margin: 15px 5px;
+    margin: 10px 5px;
     text-transform: uppercase;
 }
 
@@ -244,11 +244,12 @@ h3 {
 
 .texto-diferente h3 {
   color: #8c52ff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
   margin-left: 15%;
+  transition: 1s ease;
 }
 
 

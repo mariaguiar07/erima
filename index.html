@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/bfp6cnf.css">
     <title>ERIMA</title>
 </head>
@@ -14,10 +15,10 @@
     <div class="imagem-fundo-secao1"> <!--fundo da seção 1-->
 
         <nav class="menu-topo-secao1"> <!--menu no topo da seção 1-->
-            <a class="icon-menu">Sobre nós</a>
-            <a class="icon-menu">Produtos</a>
-            <a class="icon-menu">Parceiros</a>
-            <button class="button-menu">Contato</button>
+            <a href="#sobrenos" class="icon-menu">Sobre nós</a>
+            <a href="#produtos" class="icon-menu">Produtos</a>
+            <a href="#parceiros" class="icon-menu">Parceiros</a>
+            <a href="#contato" class="button-link">Contato</a>
         </nav>
 
         <header> <!--logo e frase da seção 1-->
@@ -30,7 +31,7 @@
 
     <main> <!--caixa-mãe da seção 2-->
 
-        <section class="layout-secao2"> <!--primogênito na seção 2-->
+        <section id="sobrenos" class="layout-secao2"> <!--primogênito na seção 2-->
 
             <div class="bloco-imagens-secao2">
 
@@ -84,66 +85,70 @@
 
         </section>
 
-        <section-other> <!--filho do meio na seção 3-->
+        <section-other id="produtos"> <!--filho do meio na seção 3-->
 
             <h1 class="frase-secao3">Do essencial ao inovador <br>soluções que trabalham por você</h1>
 
             <div class="layout-cards-secao3"> <!--neto 1 - cards produtos da seção 3-->
 
-                <div class="card-produto">
+                <div class="card-produto"
+                    onmouseenter="trocarTexto(this, '<br>Computadores <br>Notebooks <br>Workstation <br>Monitores')">
                     <img class="icon-card-un" src="./img/produtos/icone-computacao-corporativa.png"
                         alt="Computação Corporativa">
-                    <h2>Computação Corporativa</h2>
-                    <h3>Tecnologia que acompanha o seu ritmo de trabalho</h3>
+                    <div class="texto-diferente">
+                        <h2>Computação Corporativa</h2>
+                        <h3>Tecnologia que acompanha o seu ritmo de trabalho</h3>
+                    </div>
                 </div>
 
                 <div class="card-produto">
-                    <img class="icon-card-un" src="./img/produtos/icone-automacao-comercial.png" alt="Automação Comercial">
+                    <img class="icon-card-un" src="./img/produtos/icone-automacao-comercial.png"
+                        alt="Automação Comercial">
                     <h2>Automação <br>Comercial</h2>
-                    <h3>Controle e <br>desempenho <br>na palma da mão</h3>                    
+                    <h3>Controle e <br>desempenho <br>na palma da mão</h3>
                 </div>
 
                 <div class="card-produto">
                     <img class="icon-card-un" src="./img/produtos/icone-solucoes-energia.png" alt="Soluções em Energia">
                     <h2>Soluções em Energia</h2>
-                    <h3>Operações Ininterruptas</h3>                   
+                    <h3>Operações Ininterruptas</h3>
                 </div>
 
                 <div class="card-produto">
                     <img class="icon-card-un" src="./img/produtos/icone-software.png" alt="Software">
                     <h2>Softwares</h2>
-                    <h3>Inteligência <br>a serviço <br>do seu negócio</h3>                    
+                    <h3>Inteligência <br>a serviço <br>do seu negócio</h3>
                 </div>
 
                 <div class="card-produto">
                     <img class="icon-card-un" src="./img/produtos/icone-conectividade.png" alt="Conectividade">
                     <h2>Conectividade</h2>
-                    <h3>Conexão estável <br>com máxima <br>eficiência</h3>                    
+                    <h3>Conexão estável <br>com máxima <br>eficiência</h3>
                 </div>
 
                 <div class="card-produto">
                     <img class="icon-card-un" src="./img/produtos/icone-redes-ubiquiti.png" alt="Redes - Ubiquiti">
                     <h2>Redes Ubiquite</h2>
-                    <h3>Potência sem complicação</h3>                    
+                    <h3>Potência sem complicação</h3>
                 </div>
 
                 <div class="card-produto">
                     <img class="icon-card-un" src="./img/produtos/icone-redes-aruba.png" alt="Redes - Aruba">
                     <h2>Redes Aruba</h2>
-                    <h3>Redes inteligentes com gestão centralizada</h3>                    
+                    <h3>Redes inteligentes com gestão centralizada</h3>
                 </div>
 
                 <div class="card-produto">
-                <img class="icon-card-un" src="./img/produtos/icone-solucoes-servidores.png"
-                    alt="Soluções para Servidores">
+                    <img class="icon-card-un" src="./img/produtos/icone-solucoes-servidores.png"
+                        alt="Soluções para Servidores">
                     <h2>Soluções para Servidores</h2>
-                    <h3>Prepare seu servidor para os desafios <br>do futuro</h3>                   
+                    <h3>Prepare seu servidor para os desafios <br>do futuro</h3>
                 </div>
 
             </div>
         </section-other>
 
-        <article> <!--filho caçula na seção 4-->
+        <article id="parceiros"> <!--filho caçula na seção 4-->
             <div class="parceiros-secao4">
                 <h2 class="frase-secao4">FALE O QUE PRECISA, NÓS TEMOS UMA SOLUÇÃO!</h2>
 
@@ -267,10 +272,34 @@
 
     </main>
 
-    <footer>
-        <h1 class="frase-footer">Presença confiável, onde a inovação acontece!</h1>
-        <h2 class="telefone">(41) 9.8408-8490</h2>
-        <h2 class="email">vendas@erimatecnologia.com.br</h2>
+    <footer id="contato">
+        <div class="imagem-fundo-footer">
+            <div class="conteudo-footer">
+
+                <h1 class="frase-footer">Presença confiável, onde a inovação acontece!</h1>
+
+                <div class="area-logos-contato">
+                    <div class="logos-footer">
+                        <img class="logo-roxa" src="./img/Erima Tecnologia - Logotipo-RGB_ER_Simbolo-roxo.png">
+                        <img class="logo-verde" src="./img/Erima Tecnologia - Logotipo-RGB_ER_Simbolo-verde.png">
+                    </div>
+
+                    <div class="bloco-contato">
+
+                        <div class="item-contato">
+                            <img class="icon-telefone" src="./img/icon-telefone.png">
+                            <h2 class="telefone">(41) 9.8408-8490</h2>
+                        </div>
+
+                        <div class="item-contato">
+                            <img class="icon-email" src="./img/icon-email.png">
+                            <h2 class="email">vendas@erimatecnologia.com.br</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

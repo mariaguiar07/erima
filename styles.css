@@ -38,6 +38,7 @@
     display: inline-block;
     padding-right: 90px;
     transition: transform 0.9s ease;
+    text-decoration: none;
 }
 
 .icon-menu:hover {
@@ -45,20 +46,20 @@
     transform: scale(1.1);
 }
 
-.button-menu {
+.button-link {
     font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-decoration: none;
     background-color: #4b4192;
-    width: 160px;
-    height: 50px;
+    padding: 15px 40px;
     border-radius: 30px;
     border: none;
     transition: transform 0.9s ease;
     transition: background-color 0.9s ease;
 }
 
-.button-menu:hover {
+.button-link:hover {
     cursor: pointer;
     transform: scale(1.1);
     background-color: #63b34a;
@@ -239,6 +240,17 @@ h3 {
     text-transform: uppercase;
 }
 
+/*mudança de texto*/
+
+.texto-diferente h3 {
+  color: #8c52ff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 15%;
+}
+
 
 
 /*INICIO DA SEÇÃO 4*/
@@ -312,28 +324,106 @@ h3 {
 }
 
 /*INICIO SEÇÃO 5*/
-.footer {
+.imagem-fundo-footer { /*fundo da seção 5*/
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.777)), url(./img/fundo-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    justify-content: center;
+}
+
+.conteudo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 .frase-footer {
-    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
     font-weight: 400;
     color: #201b45;
-    font-size: 18px;
+    font-weight: 500;
+}
+
+.area-logos-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logos-footer {
+    position: relative;
+    width: 140px; /* ajusta conforme o tamanho desejado */
+    height: 140px;
+}
+
+.logo-verde, .logo-roxa  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.logo-verde { /*sobreposição de logos*/
+    position: absolute;
+    top: 7px; /* Desloca levemente para baixo */
+    left: 0;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+}
+
+.bloco-contato {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.item-contato {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px; /*Distancia entre o icone e o contato*/
+}
+
+.icon-telefone {
+    width: 40px;
+    height: auto;
+}
+
+.icon-email {
+    width: 40px;
+    height: auto;
+}
+
+.email {
+  font-size: 16px;
+  color: #63b34a;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .telefone, .email {
     color: #63b34a;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     text-align: left;
 }
 
 .email {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 

@@ -242,14 +242,19 @@ h3 {
 
 /*mudança de texto*/
 
-.texto-diferente h3 {
-  color: #8c52ff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: left;
-  margin-left: 15%;
-  transition: 1s ease;
+.novo-estilo {
+    position: relative;
+    margin: -10px;
+    color: #8c52ff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 35px;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 1s;
+    opacity: 1;
+    color: #63b34a;
 }
 
 

@@ -3,26 +3,27 @@
     margin: 0;
     font-family: degular-variable, sans-serif;
     color: white;
+    box-sizing: border-box;
 }
 
 #botao-topo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 14px;
-  background-color: #63b34a;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s;
-  z-index: 9999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    background-color: #63b34a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    z-index: 9999;
 }
 
 #botao-topo:hover {
-  background-color: #4c983a;
+    background-color: #4c983a;
 }
 
 
@@ -33,7 +34,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
-    height: 600px;
+    min-height: 700px;
     padding-top: 70px;
     padding-bottom: 100px;
 }
@@ -89,7 +90,8 @@
 .logo {
     display: block;
     margin: 150px auto;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -221,7 +223,6 @@ figure {
     justify-items: center;
     justify-content: center;
     align-items: center;
-    
 }
 
 .card-produto {
@@ -229,6 +230,21 @@ figure {
     border-radius: 12px;
     width: 180px;
     height: 250px;
+}
+
+.segunda-linha {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+}
+
+.segunda-linha-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 200px));
+    gap: 32px;
+    padding: 40px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-produto,
@@ -280,8 +296,8 @@ h3 {
 
 .automacao .novo-estilo {
     font-size: 11px;
-    margin: 10px;
-    margin-left: 11px;
+    margin: 15px;
+    margin-left: 25px;
     line-height: 1.7;
 }
 
@@ -292,8 +308,8 @@ h3 {
 
 .software .novo-estilo {
     font-size: 11px;
-    margin: -10px;
-    margin-left: 5px;
+    margin: 0px;
+    margin-left: 10px;
 }
 
 .conectividade .novo-estilo {
@@ -301,17 +317,10 @@ h3 {
     margin-left: 12px;
 }
 
-.ubiquite .novo-estilo {
-    font-size: 11px;
-    margin: -10px;
-    margin-left: 20px;
-    line-height: 1.7;
-}
-
-.aruba .novo-estilo {
+.redes .novo-estilo {
     font-size: 11px;
     margin: 0px;
-    margin-left: 8px;
+    margin-left: 20px;
     line-height: 1.7;
 }
 
@@ -334,6 +343,7 @@ h3 {
 .frase-secao4 {
     font-size: 28px;
     font-weight: bolder;
+    margin-bottom: 25px;
 }
 
 .grid-logos {
@@ -383,21 +393,18 @@ h3 {
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 0;
-}
-
-.imagem-lateral-grid {
-    width: 255px;
-    height: auto;
-    opacity: 0.5;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /*INICIO SEÇÃO 5*/
-.imagem-fundo-footer { /*fundo da seção 5*/
+.imagem-fundo-footer {
+    /*fundo da seção 5*/
     position: relative;
     background-image: linear-gradient(rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.777)), url(./img/fundo-footer.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
@@ -432,11 +439,13 @@ h3 {
 
 .logos-footer {
     position: relative;
-    width: 140px; /* ajusta conforme o tamanho desejado */
+    width: 140px;
+    /* ajusta conforme o tamanho desejado */
     height: 140px;
 }
 
-.logo-verde, .logo-roxa  {
+.logo-verde,
+.logo-roxa {
     position: absolute;
     top: 0;
     left: 0;
@@ -444,9 +453,11 @@ h3 {
     height: auto;
 }
 
-.logo-verde { /*sobreposição de logos*/
+.logo-verde {
+    /*sobreposição de logos*/
     position: absolute;
-    top: 7px; /* Desloca levemente para baixo */
+    top: 7px;
+    /* Desloca levemente para baixo */
     left: 0;
     width: 100%;
     height: auto;
@@ -455,17 +466,18 @@ h3 {
 }
 
 .bloco-contato {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: center;
-  margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .item-contato {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px; /*Distancia entre o icone e o contato*/
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    /*Distancia entre o icone e o contato*/
 }
 
 .icon-telefone {
@@ -479,13 +491,14 @@ h3 {
 }
 
 .email {
-  font-size: 16px;
-  color: #63b34a;
-  font-weight: 400;
-  margin-top: 10px;
+    font-size: 16px;
+    color: #63b34a;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
-.telefone, .email {
+.telefone,
+.email {
     color: #63b34a;
     font-size: 24px;
     font-weight: 400;
@@ -497,3 +510,359 @@ h3 {
     margin-bottom: 50px;
 }
 
+.botao-whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 70px;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.botao-whatsapp img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.botao-whatsapp:hover img {
+    transform: scale(1.1);
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1280px) {
+    .icon-secao2 {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .button-link {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+
+    .menu-topo-secao1 {
+        font-size: 14px;
+    }
+
+    .icon-menu {
+        padding-right: 70px;
+    }
+
+    .frase-secao1 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: -70px;
+        margin-left: 0px;
+    }
+
+    main {
+        margin-top: -50px;
+    }
+
+    .icon-secao2 {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 0px;
+    }
+
+    .icon-secao2 figure img {
+        width: 60px;
+        margin-bottom: 6px;
+        /*Distancia entre o icone e a legenda*/
+    }
+
+    figure {
+        font-size: 14px;
+    }
+
+    .imagem-lateral-esquerda-icon,
+    .imagem-lateral-direita-icon {
+        width: 200px;
+        height: auto;
+    }
+
+    .imagem-equipe {
+        width: 300px;
+        margin-top: 50px;
+        margin-right: 70px;
+    }
+
+    .titulo-sobre-nos {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .fundo-texto {
+        width: 300px;
+        height: 240px;
+    }
+
+    .sobre-nos {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .frase-secao3 {
+        font-size: 24px;
+    }
+
+    .layout-cards-secao3 {
+        grid-template-columns: repeat(4, minmax(140px, 160px));
+    }
+
+    .segunda-linha {
+        width: calc(100% + 14px);
+        height: calc(100% + 14px);
+    }
+
+    .icon-card-un {
+        width: 60px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .frase-secao4 {
+        font-size: 24px;
+    }
+
+    .grid-logos {
+        grid-template-columns: repeat(9, 90px);
+    }
+
+    .logo-un {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .imagem-fundo-secao1 {
+        min-height: 80%;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+
+    .icon-secao2 {
+        gap: 40px;
+    }
+
+    .imagem-e-texto {
+        margin-top: 60px;
+    }
+
+    .grid-logos {
+        grid-template-columns: repeat(9, 70px);
+    }
+
+    .logo-un {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cor-fundo-pag {
+        height: 1900px;
+    }
+}
+
+@media (max-width: 920px) {
+    .logo {
+        margin: 90px auto 150px auto;
+    }
+}
+
+@media (max-width: 815px) {
+
+    .logo {
+        max-width: 400px;
+    }
+
+    .frase-secao1 {
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: -50px;
+    }
+
+    .icon-secao2 figure img {
+        width: 50px;
+    }
+
+    figure {
+        font-size: 12px;
+    }
+
+    .imagem-lateral-esquerda-icon,
+    .imagem-lateral-direita-icon {
+        width: 150px;
+        height: auto;
+    }
+
+    .imagem-equipe {
+        width: 250px;
+        margin-top: 50px;
+        margin-right: 90px;
+    }
+
+    .titulo-sobre-nos {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-right: 80px;
+    }
+
+    .fundo-texto {
+        width: 290px;
+        height: 240px;
+        margin-right: 80px;
+    }
+
+    .sobre-nos {
+        width: 220px;
+        font-size: 16px;
+    }
+
+    .frase-secao3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .button-link {
+        font-size: 12px;
+        padding: 15px 25px;
+    }
+
+    .menu-topo-secao1 {
+        font-size: 12px;
+    }
+
+    .icon-menu {
+        padding-right: 50px;
+    }
+
+    .logo {
+        max-width: 300px;
+    }
+
+    .frase-secao1 {
+        font-size: 14px;
+    }
+
+    .icon-secao2 {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 0px;
+    }
+
+    .bloco-imagens-secao2 {
+        justify-content: center;
+    }
+
+    .icon-secao2 figure img {
+        width: 60px;
+    }
+
+    figure {
+        font-size: 12px;
+    }
+
+    .imagem-lateral-esquerda-icon,
+    .imagem-lateral-direita-icon {
+        display: none;
+    }
+
+    .imagem-equipe {
+        width: 250px;
+        margin-top: 40px;
+        margin-right: 70px;
+    }
+
+    .titulo-sobre-nos {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .fundo-texto {
+        width: 260px;
+        height: 230px;
+    }
+
+    .sobre-nos {
+        width: 230px;
+        font-size: 14px;
+    }
+
+    .frase-secao3 {
+        font-size: 20px;
+    }
+
+    .layout-cards-secao3 {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 24px;
+        padding: 20px;
+    }
+
+    .card-produto {
+        width: 100%;
+        max-width: 160px;
+        height: 180px;
+        padding: 14px;
+        font-size: 0.85rem;
+    }
+
+    .card-produto h2 {
+        font-size: 16px;
+    }
+
+    .card-produto h3 {
+        font-size: 12px;
+    }
+
+    .icon-card-un {
+        width: 40px;
+        margin: 10px 0;
+    }
+
+    .frase-secao4 {
+        font-size: 24px;
+    }
+
+    .grid-logos {
+        grid-template-columns: repeat(9, 50px);
+    }
+
+    .logo-un {
+        width: 50px;
+        height: 50px;
+    }
+
+    .botao-whatsapp {
+        bottom: 40px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #botao-topo {
+        display: none !important;
+    }
+}

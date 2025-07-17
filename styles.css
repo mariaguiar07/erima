@@ -866,3 +866,202 @@ h3 {
         display: none !important;
     }
 }
+
+@media (max-width: 650px) {
+
+    .button-link {
+        font-size: 8px;
+        padding: 15px 15px;
+    }
+
+    .menu-topo-secao1 {
+        font-size: 10px;
+        margin-top: -30px;
+    }
+
+    .icon-menu {
+        padding-right: 20px;
+    }
+
+    .logo {
+        max-width: 200px;
+        margin: 70px auto 120px auto;
+    }
+
+    .frase-secao1 {
+        font-size: 8px;
+    }
+
+    .icon-secao2 {
+        gap: 50px;
+    }
+
+    .icon-secao2 figure img {
+        width: 40px;
+    }
+
+    figure {
+        font-size: 10px;
+    }
+
+    .imagem-e-texto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .imagem-equipe {
+        width: 200px;
+        margin: 0px 0 20px 0;
+        order: -1;
+        /* move a imagem para cima */
+    }
+
+    .titulo-sobre-nos {
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .fundo-texto {
+        height: 210px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .sobre-nos {
+        width: 180px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .frase-secao3 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .grid-logos {
+        grid-template-columns: repeat(7, 50px);
+    }
+
+    .logo-un {
+        width: 50px;
+        height: 50px;
+    }
+
+    .frase-secao4 {
+        font-size: 16px;
+    }
+
+    .frase-footer {
+        font-size: 20px;
+    }
+
+    .logos-footer {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bloco-contato {
+        margin: 0px;
+        margin-top: -20px;
+    }
+
+    .icon-telefone,
+    .icon-email {
+        width: 30px;
+    }
+
+    .icon-email {
+        margin-top: 5px;
+    }
+
+    .telefone {
+        font-size: 18px;
+    }
+
+    .email {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+
+     .button-link {
+        font-size: 6px;
+        padding: 6px 10px;
+    }
+
+    .menu-topo-secao1 {
+        font-size: 6px;
+        margin-top: -40px;
+    }
+
+    .logo {
+        max-width: 200px;
+        margin: 50px auto 120px auto;
+    }
+
+    .frase-secao1 {
+        font-size: 9px;
+        word-spacing: 0.5px;
+        letter-spacing: 0px;
+    }
+
+    .icon-secao2 {
+        gap: 50px;
+    }
+
+    .icon-secao2 figure img {
+        width: 35px;
+    }
+
+    figure {
+        font-size: 9px;
+    }
+
+
+    .imagem-e-texto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .imagem-equipe {
+        width: 150px;
+        margin: 0px 0 20px 0;
+        order: -1;
+        /* move a imagem para cima */
+    }
+
+    .titulo-sobre-nos {
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .fundo-texto {
+        height: 210px;
+        width: 235px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .sobre-nos {
+        width: 140px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .grid-logos {
+        grid-template-columns: repeat(5, 60px);
+    }
+
+    .logo-un {
+        width: 60px;
+        height: 60px;
+    }
+}
